@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gameSymbols {
+    width: 500px;
+    margin: 200px auto 100px;
+    text-align: center;
+}
+
+.fas {
+    font-size: 50px;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 0 5px black;
+    cursor: pointer;
+}
+
+.fas:hover {
+    border: 5px solid black;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.startDuel {
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.startDuel:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.active {
+    background-color: darkgreen;
+}
+
+.statistics {
+    margin: 100px auto;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    /* font-weight: 500; */
+}
+
+.statistics span {
+    font-weight: 900;
+}
+
+.wins {
+    color: darkgreen;
+}
+
+.losses {
+    color: darkred;
+}
