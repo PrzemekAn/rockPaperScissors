@@ -77,3 +77,44 @@ body {
 .losses {
     color: darkred;
 }
+
+.choicesPC {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    /* transform: translateX(-50%); */
+    text-align: center;
+    font-size: 20px;
+}
+
+.choicesPC p {
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.choicesPlayer {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    /* transform: translateX(-50%); */
+    text-align: center;
+    font-size: 20px;
+}
+
+.choicesPlayer p {
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.far {
+    font-size: 50px;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 0 5px black;
+
+}

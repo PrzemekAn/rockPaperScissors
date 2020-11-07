@@ -15,4 +15,14 @@ class Result{
             return false;
         }
     }
+
+    getPicks(pick, element){
+        if(pick === 'rock'){
+            element.innerHTML = '<i class="far fa-hand-rock"></i>';
+        }else if(pick ==='paper'){
+            element.innerHTML = '<i class="far fa-hand-paper"></i>';
+        }else{
+            element.innerHTML = '<i class="far fa-hand-scissors"></i>';
+        }
+    }
 }
