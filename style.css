@@ -55,7 +55,8 @@ body {
 }
 
 .active {
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
+    background-color: darkorange;
 }
 
 .statistics {
@@ -76,6 +77,15 @@ body {
 
 .losses {
     color: darkred;
+}
+
+.currentWinner {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .choicesPC {

@@ -25,4 +25,17 @@ class Statistics{
 
         return [this.gamesNumber,this.winsNumber,this.lossesNumber,this.drawsNumber];
     }
+
+    showWinner(currentResult,element){
+        if (currentResult === true){
+            element.style.color = "darkgreen";
+            return "Wygrałeś";
+        }else if(currentResult === false){
+            element.style.color = "darkred";
+            return "Przegrałeś";
+        }else {
+            element.style.color = "black";
+            return "Remis";
+        }
+    }
 }

@@ -11,18 +11,16 @@ class Game{
         this.drawsSpan = document.querySelector('.draws');
         this.computerPicks = document.querySelector('.computer');
         this.playerPicks = document.querySelector('.player');
+        this.currentWinner = document.querySelector('.currentWinner');
 
         this.startDuelBtn.addEventListener('click', this.render.bind(this))
     }
 
     startGame(){
-        this.duel.selection(this.gameSymbols); // przekazanie tablicy z możliwościami dla gracza
+        this.duel.selection(this.gameSymbols);
     }
 
     render(){
-        // this.gameSymbols.forEach(gameSymbol => {
-        //     gameSymbol.classList.remove('active');
-        // })
         if(this.duel.checkCanPlay()){
             this.playersChoice = this.duel.playerChoice();
             this.computersChoice = this.duel.computerChoice();
@@ -30,6 +28,7 @@ class Game{
         const currentStats = this.statistics.getStatistics(currentResult);
         this.result.getPicks(this.playersChoice,this.playerPicks);
         this.result.getPicks(this.computersChoice,this.computerPicks);
+        this.currentWinner.textContent = this.statistics.showWinner(currentResult,this.currentWinner)
 
         this.gamesSpan.textContent = this.statistics.showStatistics()[0];
         this.winsSpan.textContent = this.statistics.showStatistics()[1];
